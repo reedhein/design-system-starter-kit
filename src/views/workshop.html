@@ -14,11 +14,59 @@
 <!-- <img src="/assets/workshop-salesforce-red.jpg" alt="" class="slds-size--2-of-3 slds-m-bottom--large" /> -->
 
 <!-- PAGE HEADER: https://www.lightningdesignsystem.com/components/page-headers/#flavor-record-home -->
-
+<div class="slds-page-header" role="banner">
+  <div class="slds-media">
+    <div class="slds-media__figure">
+      <svg aria-hidden="true" class="slds-icon slds-icon-standard-opportunity">
+        <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#opportunity"></use>
+      </svg>
+    </div>
+    <div class="slds-media__body">
+      <p class="slds-page-header__title slds-truncate" title="Rohde Corp - 80,000 Widgets">Rohde Corp - 80,000 Widgets</p>
+      <p class="slds-text-body--small">Mark Jaeckal • Unlimited Customer • 11/13/15</p>
+    </div>
+  </div>
+</div>
 <!-- /PAGE HEADER -->
 
 <!-- WIZARD: https://www.lightningdesignsystem.com/components/process/#flavor-wizard -->
-
+<div class="slds-wizard" role="navigation">
+  <ol class="slds-wizard__list">
+    <li class="slds-wizard__item slds-is-active">
+      <a href="javascript:void(0);" class="slds-wizard__link">
+        <span class="slds-wizard__marker"></span>
+        <span class="slds-wizard__label slds-text-title--caps slds-truncate">Navigation</span>
+      </a>
+    </li>
+    <li class="slds-wizard__item slds-is-active">
+      <a href="javascript:void(0);" class="slds-wizard__link">
+        <span class="slds-wizard__marker"></span>
+        <span class="slds-wizard__label slds-text-title--caps slds-truncate">Actions</span>
+      </a>
+    </li>
+    <li class="slds-wizard__item slds-is-active">
+      <a href="javascript:void(0);" class="slds-wizard__link">
+        <span class="slds-wizard__marker"></span>
+        <span class="slds-wizard__label slds-text-title--caps slds-truncate">Compact Layout</span>
+      </a>
+    </li>
+    <li class="slds-wizard__item">
+      <a href="javascript:void(0);" class="slds-wizard__link">
+        <span class="slds-wizard__marker"></span>
+        <span class="slds-wizard__label slds-text-title--caps slds-truncate">Review</span>
+      </a>
+    </li>
+    <li class="slds-wizard__item">
+      <a href="javascript:void(0);" class="slds-wizard__link">
+        <span class="slds-wizard__marker"></span>
+        <span class="slds-wizard__label slds-text-title--caps slds-truncate">Invite</span>
+      </a>
+    </li>
+  </ol>
+  <span class="slds-wizard__progress">
+    <span class="slds-wizard__progress-bar" style="width:50%;"></span>
+  </span>
+</div>
 <!-- /WIZARD -->
 
 <!-- COLUMNS - already populated for you: https://www.lightningdesignsystem.com/components/utilities/grid/#flavor-manual-sizing -->
@@ -28,11 +76,27 @@
   <div class="slds-col slds-size--3-of-4 slds-col--padded">
 
     <!-- TABS: https://www.lightningdesignsystem.com/components/tabs/#flavor-default -->
-
+<div class="slds-tabs--default">
+  <ul class="slds-tabs--default__nav" role="tablist">
+    <li class="slds-tabs--default__item slds-text-title--caps slds-active" title="Item One" role="presentation"><a class="slds-tabs--default__link" href="javascript:void(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1" id="tab-default-1__item">Item One</a></li>
+    <li class="slds-tabs--default__item slds-text-title--caps" title="Item Two"
+      role="presentation"><a class="slds-tabs--default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-2" id="tab-default-2__item">Item Two</a></li>
+    <li class="slds-tabs--default__item slds-text-title--caps" title="Item Three"
+      role="presentation"><a class="slds-tabs--default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3" id="tab-default-3__item">Item Three</a></li>
+  </ul>
+  <div id="tab-default-1" class="slds-tabs--default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item">Item One Content</div>
+  <div id="tab-default-2" class="slds-tabs--default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item">Item Two Content</div>
+  <div id="tab-default-3" class="slds-tabs--default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-3__item">Item Three Content</div>
+</div>
     <!-- /TABS -->
 
     <!-- DESCRIPTION LIST: https://www.lightningdesignsystem.com/components/utilities/lists/#flavor-description-list -->
-
+<dl>
+  <dt>First Label:</dt>
+  <dd>Description for first label</dd>
+  <dt>Second Label:</dt>
+  <dd>Description for second label</dd>
+</dl>
     <!-- /DESCRIPTION LIST -->
 
   </div>
@@ -42,7 +106,34 @@
   <div class="slds-col slds-size--1-of-4 slds-col--padded">
 
     <!-- NARROW CARD: https://www.lightningdesignsystem.com/components/cards/#flavor-related-list-narrow -->
-
+<article class="slds-card slds-card--narrow">
+  <div class="slds-card__header slds-grid">
+    <header class="slds-media slds-media--center slds-has-flexi-truncate">
+      <div class="slds-media__figure">
+        <svg aria-hidden="true" class="slds-icon slds-icon-standard-contact slds-icon--small">
+          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#contact"></use>
+        </svg>
+      </div>
+      <div class="slds-media__body slds-truncate">
+        <h2>
+          <a href="javascript:void(0);" class="slds-text-link--reset">
+            <span class="slds-text-heading--small">Card Header</span>
+          </a>
+        </h2>
+      </div>
+    </header>
+    <div class="slds-no-flex">
+      <button class="slds-button slds-button--icon-border-filled slds-button--icon-x-small" aria-haspopup="true">
+        <svg aria-hidden="true" class="slds-button__icon">
+          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+        </svg>
+        <span class="slds-assistive-text">More Options</span>
+      </button>
+    </div>
+  </div>
+  <div class="slds-card__body">Card Body (custom goes in here)</div>
+  <div class="slds-card__footer">Card Footer</div>
+</article>
     <!-- /NARROW CARD -->
 
   </div>
